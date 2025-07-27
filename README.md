@@ -126,7 +126,7 @@ Build dosyaları `dist/` klasörüne oluşturulacaktır.
 ## 🤝 Geliştirme
 
 - **Design:** [Sarp Dökmeci](https://www.linkedin.com/in/sarpdokmeci/)
-- **Development:** [Burak Toprakcam](https://www.linkedin.com/in/buraktoprakcam/)
+- **Development:** [Burak Toprak Çam](https://www.linkedin.com/in/buraktoprakcam/)
 
 ## 📞 İletişim
 

@@ -361,7 +361,7 @@
     <div class="w-full px-4 md:px-12 py-4 md:py-6 flex-shrink-0">
       <div class="flex justify-between items-center w-full">
         <span class="font-bold text-base md:text-xl text-white">HABS.</span>
-        <span class="font-bold text-base md:text-xl text-[#262626]">Project Studio</span>
+        <span class="font-bold text-base md:text-xl text-white143">Project Studio</span>
       </div>
     </div>
     
