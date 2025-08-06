@@ -319,30 +319,40 @@
       <!-- Projeler -->
       <div class="flex flex-col md:flex-row gap-6 md:gap-8 justify-center">
         <!-- Sol Proje - Volvo -->
-        <div class="w-full md:w-2/5 flex flex-col">
+        <a 
+          href="https://vimeo.com/872963224" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full md:w-2/5 flex flex-col cursor-pointer"
+        >
           <div class="h-auto flex items-center justify-center mb-4 md:mb-8">
             <img src="@/assets/8.png" alt="Volvo C40" class="w-full h-auto object-contain" />
           </div>
           <div class="p-0">
-            <h3 class="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-[#262626]">VOLVO C40 TÜRKİYE LANSMANI</h3>
+            <h3 class="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-[#262626] hover:text-[#EC4E34] transition-colors duration-300">VOLVO C40 TÜRKİYE LANSMANI</h3>
             <p class="text-sm md:text-xl leading-relaxed text-[#262626]">
               Volvo Cars Türkiye'nin ilk %100 elektrikli aracı olan C40 modeli için kreatif konsept ve prodüksiyon uygulama aşamalarını üstlendiğimiz reklam filmi.
             </p>
           </div>
-        </div>
+        </a>
         
         <!-- Sağ Proje - Origani -->
-        <div class="w-full md:w-2/5 flex flex-col">
+        <a 
+          href="https://vimeo.com/1095894339/6ac088fddb" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="w-full md:w-2/5 flex flex-col cursor-pointer"
+        >
           <div class="h-auto flex items-center justify-center mb-4 md:mb-8">
             <img src="@/assets/9.png" alt="Origani x Muslera" class="w-full h-auto object-contain" />
           </div>
           <div class="p-0">
-            <h3 class="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-[#262626]">ORIGANI X MUSLERA</h3>
+            <h3 class="text-lg md:text-2xl font-bold mb-2 md:mb-3 text-[#262626] hover:text-[#EC4E34] transition-colors duration-300">ORIGANI X MUSLERA</h3>
             <p class="text-sm md:text-xl leading-relaxed text-[#262626]">
               Origani Hair için kreatif konsept ve prodüksiyon uygulama aşamalarını üstlendiğimiz reklam filmi.
             </p>
           </div>
-        </div>
+        </a>
       </div>
     </div>
     
