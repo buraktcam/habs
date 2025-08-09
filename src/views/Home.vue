@@ -1,36 +1,38 @@
 <template>
   <div class="w-full bg-[#262626]">
-  <div class="h-screen w-full flex flex-col md:flex-row font-sans text-[#262626]" style="font-family: 'Montserrat', sans-serif; color: #262626;">
+  <div class="min-h-screen w-full flex flex-col md:flex-row font-sans text-[#262626]" style="font-family: 'Montserrat', sans-serif; color: #262626;">
     <!-- Left Section -->
-    <div class="w-full md:w-7/12 flex flex-col">
+    <div class="w-full md:w-7/12 flex flex-col min-h-screen md:min-h-0">
       <!-- Top part of Left Section -->
-      <div class="bg-[#F0F0F0] flex-grow flex flex-col justify-between p-4 md:p-8">
-        <header class="w-full flex justify-between items-center">
-          <span class="font-bold text-base md:text-lg">HABS.</span>
-          <span class="font-semibold text-sm md:text-base md:hidden">Project Studio</span>
+      <div class="bg-[#F0F0F0] flex-grow flex flex-col justify-between p-6 md:p-8 min-h-[60vh] md:min-h-0">
+        <header class="w-full flex justify-between items-center mb-8 md:mb-0">
+          <span class="font-bold text-lg md:text-lg">HABS.</span>
+          <span class="font-semibold text-base md:text-base md:hidden">Project Studio</span>
         </header>
-        <div class="flex-grow flex items-center justify-start pl-2 md:pl-4">
-          <div class="flex items-end" style="font-family: 'Anton', sans-serif;">
-            <h1 class="text-6xl sm:text-7xl md:text-[12.5vw] font-black leading-none" style="letter-spacing: 0.08em;">HABS</h1>
-            <div class="w-3 h-3 sm:w-4 sm:h-4 md:w-[2.2vw] md:h-[2.2vw] bg-[#262626] self-end mb-3 md:mb-5 ml-2 md:ml-3"></div>
-            <div class="flex flex-col mb-1 sm:mb-2 md:mb-[1.5vw] ml-4 sm:ml-8 md:ml-56 lg:ml-60 xl:ml-10" style="font-family: 'Anton', sans-serif;">
-              <span class="text-lg sm:text-xl md:text-[3.5vw] font-black leading-none tracking-widest">PROJECT</span>
-              <span class="text-lg sm:text-xl md:text-[3.5vw] font-black leading-none tracking-widest mt-2 md:mt-12">STUDIO</span>
+        <div class="flex-grow flex items-center justify-center md:justify-start md:pl-4">
+          <div class="flex flex-col md:flex-row items-center md:items-end text-center md:text-left" style="font-family: 'Anton', sans-serif;">
+            <div class="flex items-end mb-4 md:mb-0">
+              <h1 class="text-[18vw] sm:text-[16vw] md:text-[12.5vw] font-black leading-none" style="letter-spacing: 0.08em;">HABS</h1>
+              <div class="w-[4vw] h-[4vw] sm:w-[3.5vw] sm:h-[3.5vw] md:w-[2.2vw] md:h-[2.2vw] bg-[#262626] self-end mb-[2vw] md:mb-5 ml-[2vw] md:ml-3"></div>
+            </div>
+            <div class="flex flex-col md:mb-[1.5vw] md:ml-56 lg:ml-60 xl:ml-10" style="font-family: 'Anton', sans-serif;">
+              <span class="text-[5vw] sm:text-[4vw] md:text-[3.5vw] font-black leading-none tracking-widest">PROJECT</span>
+              <span class="text-[5vw] sm:text-[4vw] md:text-[3.5vw] font-black leading-none tracking-widest mt-1 md:mt-12">STUDIO</span>
             </div>
           </div>
         </div>
       </div>
       <!-- Bottom part of Left Section -->
-      <div class="bg-[#EC4E34] h-auto md:h-[40vh] min-h-[200px] md:min-h-[250px] flex-shrink-0 p-4 md:p-10 flex flex-col md:flex-row items-center">
-        <button @click="scrollToNext" class="w-16 h-16 md:w-32 md:h-32 border-[1.5px] border-[#262626] rounded-full flex items-center justify-center flex-shrink-0 hover:bg-[#262626] hover:text-white transition-colors group mb-4 md:mb-0">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-14 md:w-14 text-[#262626] group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+      <div class="bg-[#EC4E34] h-auto md:h-[40vh] min-h-[250px] md:min-h-[250px] flex-shrink-0 p-6 md:p-10 flex flex-col md:flex-row items-center">
+        <button @click="scrollToNext" class="w-20 h-20 md:w-32 md:h-32 border-[1.5px] border-[#262626] rounded-full flex items-center justify-center flex-shrink-0 hover:bg-[#262626] hover:text-white transition-colors group mb-6 md:mb-0">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:h-14 md:w-14 text-[#262626] group-hover:text-white transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M13 5l7 7-7 7M5 12h15" />
           </svg>
         </button>
         <div class="ml-0 md:ml-16 text-center md:text-left">
-            <p class="text-lg sm:text-xl md:text-5xl font-medium leading-tight">
+            <p class="text-xl sm:text-2xl md:text-5xl font-medium leading-tight">
               Projeleri tasarlar,<br>
-              sonra <span class="underline underline-offset-2 md:underline-offset-8 decoration-[1.5px]">dünyasını kurarız.</span>
+              sonra <span class="underline underline-offset-4 md:underline-offset-8 decoration-[1.5px]">dünyasını kurarız.</span>
             </p>
         </div>
       </div>
@@ -50,33 +52,37 @@
   <!-- HAKKIMIZDA Slaytı -->
   <section class="min-h-screen w-full flex flex-col bg-white text-[#262626]" style="color: #262626;">
     <!-- Üst Bar -->
-    <div class="w-full px-4 md:px-8 pt-4 md:pt-6">
+    <div class="w-full px-6 md:px-8 pt-6 md:pt-6">
       <div class="flex justify-between items-center w-full">
-        <span class="font-bold text-base md:text-lg">HABS.</span>
-        <span class="font-bold text-base md:text-lg">Project Studio</span>
+        <span class="font-bold text-lg md:text-lg">HABS.</span>
+        <span class="font-bold text-lg md:text-lg">Project Studio</span>
       </div>
     </div>
     
     <!-- Çizgi -->
-    <div class="mx-4 md:mx-12 my-4 md:my-6">
-      <div class="w-full md:w-[65%] border-t-2 md:border-t-[3.5px] border-[#262626]"></div>
+    <div class="mx-6 md:mx-12 my-6 md:my-6">
+      <div class="w-full md:w-[65%] border-t-[2px] md:border-t-[3.5px] border-[#262626]"></div>
     </div>
     
     <!-- İçerik -->
-    <div class="flex flex-col md:flex-row w-full flex-1 px-4 md:px-12 gap-4 md:gap-8">
+    <div class="flex flex-col md:flex-row w-full flex-1 px-6 md:px-12 gap-6 md:gap-8">
       <div class="flex flex-col justify-start w-full md:w-1/2">
-        <span class="font-black text-[15vw] md:text-[10vw] leading-none text-[#262626] mb-4 md:mb-0" style="font-family: 'Anton', sans-serif;">HAKKIMIZDA</span>
+        <span class="font-black text-[12vw] md:text-[10vw] leading-none text-[#262626] mb-6 md:mb-0" style="font-family: 'Anton', sans-serif;">HAKKIMIZDA</span>
       </div>
-      <div class="flex flex-col justify-start w-full md:w-1/2 text-base md:text-[1.5vw] font-normal">
+      <div class="flex flex-col justify-start w-full md:w-1/2 text-lg md:text-[1.5vw] font-normal leading-relaxed">
         <p>HABS. Project Studio olarak yeni nesil bir proje ajansıyız.<br>Kendi projelerimizi geliştiriyor, yaratıcı zihinlerin fikirlerine ortak oluyoruz.</p>
-        <p class="mt-4 md:mt-6">Doğru fikirleri, doğru markalarla buluşturuyor;<br>iletişim süreçlerinin tümünü stratejik bir bakışla üstleniyoruz.</p>
+        <p class="mt-6 md:mt-6">Doğru fikirleri, doğru markalarla buluşturuyor;<br>iletişim süreçlerinin tümünü stratejik bir bakışla üstleniyoruz.</p>
       </div>
     </div>
     
+
+
+->
+
     <!-- Alt görsel -->
     <div class="w-full flex justify-center mt-4 md:mt-3 pb-4 px-4 md:px-0">
       <div class="w-full">
-                 <img src="@/assets/2.png" alt="Ofis" class="w-full object-contain rounded-md" style="max-height: 200px; background: #fff;" />
+                 <img src="@/assets/2.png" alt="Ofis" class="w-full object-contain rounded-md" style="max-height: 350px; background: #fff;" />
       </div>
     </div>
   </section>
@@ -84,50 +90,50 @@
   <!-- EKİBİMİZ Slaytı -->
   <section class="min-h-screen w-full flex flex-col bg-[#F7F7F7] text-[#262626]" style="color: #262626;">
     <!-- Üst Bar -->
-    <div class="w-full px-4 md:px-12 pt-4 md:pt-8">
+    <div class="w-full px-6 md:px-12 pt-6 md:pt-8">
       <div class="flex justify-between items-center w-full">
-        <span class="font-bold text-base md:text-xl">HABS.</span>
-        <span class="font-bold text-base md:text-xl">Project Studio</span>
+        <span class="font-bold text-lg md:text-xl">HABS.</span>
+        <span class="font-bold text-lg md:text-xl">Project Studio</span>
       </div>
-      <div class="flex flex-col md:flex-row justify-between items-start w-full mt-6 md:mt-8 relative">
-        <span class="font-black text-[15vw] md:text-[10vw] leading-none mb-4 md:mb-0" style="font-family: 'Anton', sans-serif;">EKİBİMİZ</span>
+      <div class="flex flex-col md:flex-row justify-between items-start w-full mt-8 md:mt-8 relative">
+        <span class="font-black text-[12vw] md:text-[10vw] leading-none mb-6 md:mb-0" style="font-family: 'Anton', sans-serif;">EKİBİMİZ</span>
         
-        <div class="bg-[#EC4E34] text-white text-sm md:text-2xl p-4 md:p-12 w-full md:w-[45vw] md:min-w-[500px] md:max-w-[800px] rounded font-normal">
+        <div class="bg-[#EC4E34] text-white text-base md:text-2xl p-6 md:p-12 w-full md:w-[45vw] md:min-w-[500px] md:max-w-[800px] rounded font-normal leading-relaxed">
           Her biri kendi sektörlerinde 10+ senelik deneyime sahip üç kurucu ile yola çıkan HABS. Project Studio, üzerinde çalıştığı projelerin ihtiyaçlarına göre en uygun ekipleri bir araya getirerek hızlı ve hedef odaklı bir yaklaşımla ilerliyoruz.
         </div>
       </div>
     </div>
     
     <!-- Ekip Kartları -->
-    <div class="flex flex-col md:flex-row justify-center items-start gap-6 md:gap-20 flex-1 px-4 md:px-12 pb-6 md:pb-12 mt-6 md:mt-12">
+    <div class="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-20 flex-1 px-6 md:px-12 pb-8 md:pb-12 mt-8 md:mt-12">
       <!-- Gizem Diler -->
-      <div class="flex flex-col items-center w-full md:w-[20%] p-0">
-        <img src="@/assets/3.png" alt="Gizem Diler" class="w-48 md:w-full aspect-square object-cover mb-4 md:mb-6 border-[6px] md:border-[10px] border-[#EC4E34]" />
-        <div class="w-full text-center md:text-left px-2 md:px-4 pb-4 md:pb-6">
-          <div class="font-extrabold text-lg md:text-2xl mb-2">GİZEM DİLER</div>
-          <div class="font-semibold text-base md:text-lg mb-2">KURUCU ORTAK</div>
-          <div class="text-sm md:text-lg">İş Geliştirme & Sponsorluk Direktörü</div>
+      <div class="flex flex-col items-center w-full max-w-xs md:w-[20%] p-0">
+        <img src="@/assets/3.png" alt="Gizem Diler" class="w-64 md:w-full aspect-square object-cover mb-6 md:mb-6 border-[6px] md:border-[10px] border-[#EC4E34]" />
+        <div class="w-full text-center px-2 md:px-4 pb-4 md:pb-6">
+          <div class="font-extrabold text-xl md:text-2xl mb-2">GİZEM DİLER</div>
+          <div class="font-semibold text-lg md:text-lg mb-2">KURUCU ORTAK</div>
+          <div class="text-base md:text-lg">İş Geliştirme & Sponsorluk Direktörü</div>
         </div>
       </div>
       
       <!-- Doğan Kür -->
-      <div class="flex flex-col items-center w-full md:w-[20%] p-0 relative">
-        <div class="bg-[#EC4E34] absolute inset-x-[-20px] md:inset-x-[-50px] top-[40%] md:top-[50%] bottom-[-20px] md:bottom-[-45px] z-0"></div>
-        <img src="@/assets/4.png" alt="Doğan Kür" class="w-48 md:w-full aspect-square object-cover mb-4 md:mb-6 relative z-10" />
-        <div class="w-full text-center md:text-left px-2 md:px-4 pb-4 md:pb-6 relative z-10">
-          <div class="font-extrabold text-lg md:text-2xl mb-2">DOĞAN KÜR</div>
-          <div class="font-semibold text-base md:text-lg mb-2">KURUCU ORTAK</div>
-          <div class="text-sm md:text-lg">Strateji & İletişim Direktörü</div>
+      <div class="flex flex-col items-center w-full max-w-xs md:w-[20%] p-0 relative">
+        <div class="bg-[#EC4E34] absolute inset-x-[-30px] md:inset-x-[-50px] top-[35%] md:top-[50%] bottom-[-30px] md:bottom-[-45px] z-0"></div>
+        <img src="@/assets/4.png" alt="Doğan Kür" class="w-64 md:w-full aspect-square object-cover mb-6 md:mb-6 relative z-10" />
+        <div class="w-full text-center px-2 md:px-4 pb-4 md:pb-6 relative z-10">
+          <div class="font-extrabold text-xl md:text-2xl mb-2">DOĞAN KÜR</div>
+          <div class="font-semibold text-lg md:text-lg mb-2">KURUCU ORTAK</div>
+          <div class="text-base md:text-lg">Strateji & İletişim Direktörü</div>
         </div>
       </div>
       
       <!-- Sarp Dökmeci -->
-      <div class="flex flex-col items-center w-full md:w-[20%] p-0">
-        <img src="@/assets/5.png" alt="Sarp Dökmeci" class="w-48 md:w-full aspect-square object-cover mb-4 md:mb-6 border-[6px] md:border-[10px] border-[#EC4E34]" />
-        <div class="w-full text-center md:text-left px-2 md:px-4 pb-4 md:pb-6">
-          <div class="font-extrabold text-lg md:text-2xl mb-2">SARP DÖKMECİ</div>
-          <div class="font-semibold text-base md:text-lg mb-2">KURUCU ORTAK</div>
-          <div class="text-sm md:text-lg">Kreatif Direktör & Uygulayıcı Yapımcı</div>
+      <div class="flex flex-col items-center w-full max-w-xs md:w-[20%] p-0">
+        <img src="@/assets/5.png" alt="Sarp Dökmeci" class="w-64 md:w-full aspect-square object-cover mb-6 md:mb-6 border-[6px] md:border-[10px] border-[#EC4E34]" />
+        <div class="w-full text-center px-2 md:px-4 pb-4 md:pb-6">
+          <div class="font-extrabold text-xl md:text-2xl mb-2">SARP DÖKMECİ</div>
+          <div class="font-semibold text-lg md:text-lg mb-2">KURUCU ORTAK</div>
+          <div class="text-base md:text-lg">Kreatif Direktör & Uygulayıcı Yapımcı</div>
         </div>
       </div>
     </div>
@@ -154,7 +160,7 @@
         <span class="font-bold text-base md:text-xl text-[#262626]">Project Studio</span>
       </div>
       <div class="flex-1 flex items-center">
-        <div class="text-[#262626] text-lg md:text-4xl font-bold leading-relaxed max-w-[95%] py-4 md:py-8">
+        <div class="text-[#262626] text-lg md:text-4xl  leading-relaxed max-w-[95%] py-4 md:py-8">
           Yaratıcı projelerin sadece gerçekleşmesini değil,<br>
           iz bırakmasını sağlamak.<br> 
           Kendi fikirlerimizi ve yaratıcı zihinlerin <br>
@@ -280,26 +286,35 @@
   </section>
 
   <!-- PROJELER Slaytı -->
-  <section class="min-h-screen w-full flex flex-col md:flex-row text-[#262626]" style="color: #262626;">
-    <!-- Sol Taraf - Gri Arka Plan -->
-    <div class="w-full md:w-1/2 bg-[#F0F0F0] flex flex-col px-4 md:px-12 py-4 md:py-8">
-      <div class="mb-6 md:mb-8">
-        <span class="font-bold text-base md:text-xl text-[#262626]">HABS.</span>
-      </div>
-      <div class="flex-1 flex flex-col justify-center">
-        <div class="mb-6 md:mb-8">
-          <span class="font-black text-[15vw] md:text-[12vw] leading-none text-[#262626]" style="font-family: 'Anton', sans-serif;">PROJELER</span>
+  <section class="w-full flex flex-col text-[#262626]" style="color: #262626;">
+    <!-- Mobil için tek alan, Desktop için iki alan -->
+    <div class="w-full bg-[#F0F0F0] flex flex-col md:flex-row min-h-screen">
+      <!-- Sol Taraf - Gri Arka Plan -->
+      <div class="w-full md:w-1/2 bg-[#F0F0F0] flex flex-col px-6 md:px-12 py-12 md:py-8 min-h-screen md:min-h-0">
+        <div class="mb-8 md:mb-8">
+          <span class="font-bold text-lg md:text-xl text-[#262626]">HABS.</span>
         </div>
-        <div class="mb-6 md:mb-8">
-          <span class="text-lg md:text-2xl font-bold text-[#262626]">GERÇEKLEŞTİRDİĞİMİZ PROJELER</span>
+        <div class="flex-1 flex flex-col justify-center items-center md:items-start text-center md:text-left">
+          <div class="mb-8 md:mb-8">
+            <span class="font-black text-[15vw] md:text-[12vw] leading-none text-[#262626]" style="font-family: 'Anton', sans-serif;">PROJELER</span>
+          </div>
+          <div class="mb-8 md:mb-8">
+            <span class="text-2xl md:text-2xl font-bold text-[#262626] leading-tight">GERÇEKLEŞTİRDİĞİMİZ PROJELER</span>
+          </div>
+          <div class="mt-8 md:hidden">
+            <div class="w-24 h-1 bg-[#EC4E34] mx-auto"></div>
+          </div>
+        </div>
+        <div class="md:hidden text-center pb-8">
+          <span class="font-bold text-lg text-[#262626]">Project Studio</span>
         </div>
       </div>
-    </div>
-    
-    <!-- Sağ Taraf - Turuncu Arka Plan -->
-    <div class="w-full md:w-1/2 bg-[#EC4E34] flex flex-col px-4 md:px-12 py-4 md:py-8">
-      <div class="mb-6 md:mb-8 text-left md:text-right">
-        <span class="font-bold text-base md:text-xl text-[#262626]">Project Studio</span>
+      
+      <!-- Sağ Taraf - Turuncu Arka Plan (sadece desktop'ta görünür) -->
+      <div class="hidden md:flex w-full md:w-1/2 bg-[#EC4E34] flex-col px-4 md:px-12 py-4 md:py-8">
+        <div class="mb-6 md:mb-8 text-left md:text-right">
+          <span class="font-bold text-base md:text-xl text-[#262626]">Project Studio</span>
+        </div>
       </div>
     </div>
   </section>
@@ -356,42 +371,36 @@
       </div>
     </div>
     
-    <!-- Alt Turuncu Alan -->
-    <div class="w-full flex flex-col md:flex-row">
-      <div class="bg-[#EC4E34] w-full md:w-1/2 px-8 md:px-20 py-8 md:py-20 flex items-center">
-        <span class="text-white text-lg md:text-2xl font-bold leading-relaxed tracking-wide">GERÇEKLEŞTİRDİĞİMİZ PROJELER</span>
-      </div>
-      <div class="bg-[#F0F0F0] w-full md:w-1/2 h-16 md:h-auto"></div>
-    </div>
+ 
   </section>
   
   <!-- İLETİŞİM Slaytı -->
   <section class="min-h-screen w-full flex flex-col bg-[#262626]">
     <!-- Üst Bar -->
-    <div class="w-full px-4 md:px-12 py-4 md:py-6 flex-shrink-0">
+    <div class="w-full px-6 md:px-12 py-6 md:py-6 flex-shrink-0">
       <div class="flex justify-between items-center w-full">
-        <span class="font-bold text-base md:text-xl text-white">HABS.</span>
-        <span class="font-bold text-base md:text-xl text-white143">Project Studio</span>
+        <span class="font-bold text-lg md:text-xl text-white">HABS.</span>
+        <span class="font-bold text-lg md:text-xl text-white">Project Studio</span>
       </div>
     </div>
     
     <!-- İletişim Başlığı -->
-    <div class="flex flex-col items-center mb-6 md:mb-8 flex-shrink-0">
-      <span class="font-black text-[15vw] md:text-[8vw] leading-none text-white mb-2 md:mb-4" style="font-family: 'Anton', sans-serif;">İLETİŞİM</span>
-      <div class="w-48 md:w-96 h-px bg-white"></div>
+    <div class="flex flex-col items-center mb-8 md:mb-8 flex-shrink-0">
+      <span class="font-black text-[12vw] md:text-[8vw] leading-none text-white mb-4 md:mb-4" style="font-family: 'Anton', sans-serif;">İLETİŞİM</span>
+      <div class="w-32 md:w-96 h-px bg-white"></div>
     </div>
     
     <!-- İçerik -->
     <div class="flex-1 flex flex-col md:flex-row min-h-0">
       <!-- Sol Taraf - Turuncu Alan -->
-      <div class="w-full md:w-1/2 bg-[#EC4E34] p-6 md:p-16 flex flex-col justify-center">
-        <div class="text-white space-y-6 md:space-y-8">
-          <p class="text-base md:text-2xl font-normal leading-relaxed">
+      <div class="w-full md:w-1/2 bg-[#EC4E34] p-8 md:p-16 flex flex-col justify-center">
+        <div class="text-white space-y-8 md:space-y-8">
+          <p class="text-lg md:text-2xl font-normal leading-relaxed">
             Kreatif iletişim projeleri, sponsorluk geliştirme ve görsel prodüksiyon ihtiyaçlarınız için bizimle iletişime geçebilirsiniz.
           </p>
           
-          <div class="space-y-3 md:space-y-4">
-            <div class="text-base md:text-xl font-medium">
+          <div class="space-y-4 md:space-y-4">
+            <div class="text-lg md:text-xl font-medium">
               project@habsproject.com
             </div>
             <div class="w-full h-px bg-white"></div>
@@ -400,7 +409,7 @@
       </div>
       
       <!-- Sağ Taraf - Görsel -->
-      <div class="w-full md:w-1/2 bg-[#262626] h-64 md:h-auto">
+      <div class="w-full md:w-1/2 bg-[#262626] h-80 md:h-auto">
         <img src="@/assets/10.png" alt="İletişim" class="w-full h-full object-cover" />
       </div>
     </div>
